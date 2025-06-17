@@ -10,11 +10,9 @@ This repository contains a simulation of a nonlinear heat conduction problem in 
   - Other surfaces: Fixed at 20°C
 - **Initial Condition**: 20°C everywhere
 - **Nonlinear Diffusion Coefficient**:
-  \[
-  k(u) = 1 + \frac{2}{1 + \exp(-10(u - 0.5))}
-  \]
+  $k(u) = 1 + \frac{2}{1 + \exp(-10(u - 0.5))}$
 - **Time Stepping**:
-  - Time step size: \( \Delta t = 0.00068587 \)
+  - Time step size: $\Delta t = 0.00068587$
   - Total steps: 100
 
 The simulation saves animated slices (XZ, XY, and Input surface) as a `.gif` file.
@@ -56,6 +54,6 @@ pip install --index-url https://wheels.fenicsproject.org/simple fenics-dolfinx
 
 # Install visualization tools
 pip install pyvista matplotlib
-
+```
 Author is not responsible for successful execution of the code.
 
